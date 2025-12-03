@@ -128,7 +128,7 @@
 
 ### 4. [2] View Sleep Analysis
 
-![View Sleep Analysis](./ZentraImages/ViewSleepAnalysis.png)
+![View Sleep Analysis](./ZentraImages/View SleepAnalysis.png)
 
 ### 5. [3] Generate Sleep Report:
 
@@ -146,13 +146,13 @@
 
 ![Graphical Report](./ZentraImages/GraphicalReport.png)
 
-### 6. [3] View Save logs
+### 6. [3] View Saved Logs
 
-![View Save logs](./ZentraImages/ViewSavelogs.png)
+![View Saved Logs](./ZentraImages/ViewSavedLogs.png)
 
 ### 7. [4] Update Weekly Sleep
 
-![Update Weekly Sleep](./ZentraImages/UpdateWeeklySleep.png)
+![Update Weekly Sleep](./ZentraImages/UpdateWeekly Sleep.png)
 
 ### 8. [5] Delete Saved Logs
 

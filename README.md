@@ -28,51 +28,59 @@
 
 ## PROGRAM STUCTURE
 
-**Main Class (Program Controller)**
+#### **Main Class (Program Controller)**
   
   The Main class is the starting point of the program and controls everything the user does. It shows menus, takes user input, and guides them through recording sleep data, viewing reports, and managing saved logs. It also handles input validation to make sure users enter correct values. This class keeps a reference to the current weekly log and uses the SleepLogFileManager for saving and loading files. It also includes simple helper functions for cleaning the screen and formatting text.
-
-**DailySleepRecord (One Day of Sleep Data) - Encapsulation**
+  
+#### **DailySleepRecord (One Day of Sleep Data) - Encapsulation**
   
   This class represents a single day’s sleep entry. It stores the day of the week, hours slept, sleep quality (1–5), and optional notes. All data is private, and validation ensures that sleep hours stay between 0–24 and ratings stay within the allowed range. It also includes a readable toString format for easy display. This class ensures each sleep entry is clean, valid, and consistent.
-
-**WeeklySleepLog (Full Week of Records + Calculations) - Encapsulation**
+  
+#### **WeeklySleepLog (Full Week of Records + Calculations) - Encapsulation**
   
   WeeklySleepLog stores seven DailySleepRecord objects and includes details such as the week label and start date. It calculates averages for sleep hours and sleep quality and identifies the best and worst sleep days. It can detect irregular patterns, such as multiple days of poor sleep or big differences in sleep duration. It also provides weekday and weekend analysis by filtering the data and sending it to the correct analyzer class. This class organizes and processes all sleep data for the week.
 
-**analyzePattern and getRecommendation - Polymorphism**
+#### **analyzePattern and getRecommendation - Polymorphism**
   
   These methods share identical names and appear in both the WeekdayAnalyzer and WeekendAnalyzer classes. Although they use the same method attributes, they produce different outputs because each class were modified to implement commands aligned to its specific purpose.
 
-**SleepAnalyzer (Abstract Analysis Blueprint) - Abstraction**
+#### **SleepAnalyzer (Abstract Analysis Blueprint) - Abstraction**
   
   SleepAnalyzer is an abstract class that defines the general structure for all sleep analysis. It includes two methods that every analyzer must implement: analyzePattern and getRecommendation. It also has a protected field for day type (weekday or weekend). This class cannot be used directly but provides a consistent framework for its child classes. It focuses on what analyzers must do, not how they do it.
 
-**WeekdayAnalyzer (Weekday Sleep Interpretation) - Inheritance**
+#### **WeekdayAnalyzer (Weekday Sleep Interpretation) - Inheritance**
   
   This class analyzes weekday sleep using stricter standards. It checks if the user gets the recommended 7–9 hours and gives messages about whether the pattern is healthy or lacking. It also gives specific advice for improving weekday sleep, like maintaining consistency and avoiding undersleeping or oversleeping. It tailors feedback to the busy schedule of school or work days.
 
-**WeekendAnalyzer (Weekend Sleep Interpretation) - Inheritance**
+#### **WeekendAnalyzer (Weekend Sleep Interpretation) - Inheritance**
   
   WeekendAnalyzer evaluates sleep with more flexible standards (7–10 hours). It checks whether users are catching up on sleep debt from the week and warns against relying too much on weekend oversleeping. It encourages balanced sleep throughout the entire week. Its feedback is designed for the more relaxed nature of weekends.
 
-**ReportGenerator (Abstract Reporting Framework) - Abstraction**
+#### **ReportGenerator (Abstract Reporting Framework) - Abstraction**
   
   The ReportGenerator abstract class defines the template for all report types in the system. It specifies that all reports must implement methods for report generation and format identification, creating a consistent interface for the polymorphic reporting system.
 
-**DetailedReport (Comprehensive Output) - Inheritance**
+#### **DetailedReport (Comprehensive Output) - Inheritance**
   
   Extending ReportGenerator, DetailedReport produces thorough, text-based reports that include all sleep data, complete analysis, and detected patterns. It presents information in a comprehensive format suitable for detailed review and record-keeping.
 
-**SummaryReport (Concise Overview) - Inheritance**
+#### **SummaryReport (Concise Overview) - Inheritance**
   
   Also extending ReportGenerator, SummaryReport generates brief, focused reports highlighting only key metrics and overall sleep status. This report type provides quick insights without extensive detail.
 
-**GraphicalReport (Visual Representation) - Inheritance**
+##### **GraphicalReport (Visual Representation) - Inheritance**
  
   Extending ReportGenerator, GraphicalReport creates visual reports using ASCII art representations including bar charts for sleep hours and star ratings for sleep quality. This report type offers intuitive visual analysis of sleep patterns.
 
-**SleepLogFileManager (File Saving and Loading) - Data Storage**
+#### **generateReport() (Polymorphic Implementation)** 
+
+The generateReport() method demonstrates polymorphism by having different implementations in each report subclass. While all three report classes inherit this method from the abstract ReportGenerator class, each provides its own unique version. The DetailedReport class generates comprehensive textual output showing all sleep data and analyses. The SummaryReport class produces a condensed overview highlighting only key metrics. The GraphicalReport class creates visual representations using ASCII bar charts and star ratings. This polymorphic design allows the same method call to produce completely different outputs based on the actual object type.
+
+#### **getReportFormat() (Polymorphic Identification)** 
+
+The getReportFormat() method provides polymorphic identification of each report type. Each report subclass returns a distinct string identifier: "Detailed Report" for DetailedReport, "Summary Report" for SummaryReport, and "Graphical Report" for GraphicalReport. This method enables the program to identify and display the current report format without needing complex conditional logic. It exemplifies polymorphism by using the same method signature across different classes to return type-specific information, allowing for clean, extensible code when adding new report types in the future.
+
+#### **SleepLogFileManager (File Saving and Loading) - Data Storage**
   
   This class handles all file operations using the sleep_logs.txt file. It saves weekly logs, including daily records and analysis results, and can display all saved logs in a clear format. It can also delete a specific week's log or erase all saved data. By keeping all file-related tasks in one class, the program stays organized and easier to maintain. It also safely handles file errors to prevent crashes.
 
@@ -134,15 +142,15 @@
 
 ![Generate Sleep Report](./ZENTRAImages/GenerateSleepReport.png)
 
-### 5.1. [1] Detailed Report:
+### 5.1. [3][1] Detailed Report:
 
 ![Detailed Report](./ZENTRAImages/DetailedReport.png)
 
-### 5.2. [2] Summary Report:
+### 5.2. [3][2] Summary Report:
 
 ![Summary Report](./ZENTRAImages/SummaryReport.png)
 
-### 5.3. [3] Graphical Report:
+### 5.3. [3][3] Graphical Report:
 
 ![Graphical Report](./ZENTRAImages/GraphicalReport.png)
 
@@ -175,10 +183,11 @@
 ## AUTHORS
 
 **Vaughn Aia Gabriel V. Reyes**
-**Justine Neilfred S. Ronquillo**
-**Paul Ubert B. Rosal**
+
+**Justine Neilfred S. Ronquillo** 
+
+**Paul Ubert B. Rosal** 
+
 **Jiliane Pauleen T. Tagapan**
 
-Bachelor of Science in Information Technology - 2103
-College of Informatics and Computing Sciences
-Batangas State University - The National Engineering University
+Bachelor of Science in Information Technology - 2103 | College of Informatics and Computing Sciences | Batangas State University - The National Engineering University

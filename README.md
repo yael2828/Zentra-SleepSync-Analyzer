@@ -114,53 +114,53 @@
 
   As the user runs the program, the welcome page will appear containing the title and prompting the user to continue by pressing the “Enter” key.
 
-![Welcome Page](./ZentraImages/Welcome.png)
+![Welcome Page](./ZENTRAImages/Welcome.png)
 
 ### 2.  Main  Menu: First, you have to choose between (1-6)
 
   Upon pressing the “Enter” key, the main menu will appear, prompting the user to select from the options depending on what function they want to explore. The function of each option will be presented on the screenshots of the following:
 
-![Main Menu](./ZentraImages/MainMenu.png)
+![Main Menu](./ZENTRAImages/MainMenu.png)
 
 ### 3. [1] Record Weekly Sleep
 
-![Record Weekly Sleep](./ZentraImages/RecordWeeklySleep.png)
+![Record Weekly Sleep](./ZENTRAImages/RecordWeeklySleep.png)
 
 ### 4. [2] View Sleep Analysis
 
-![View Sleep Analysis](./ZentraImages/View SleepAnalysis.png)
+![View Sleep Analysis](./ZENTRAImages/ViewSleepAnalysis.png)
 
 ### 5. [3] Generate Sleep Report:
 
-![Generate Sleep Report](./ZentraImages/GenerateSleepReport.png)
+![Generate Sleep Report](./ZENTRAImages/GenerateSleepReport.png)
 
 ### 5.1. [1] Detailed Report:
 
-![Detailed Report](./ZentraImages/DetailedReport.png)
+![Detailed Report](./ZENTRAImages/DetailedReport.png)
 
 ### 5.2. [2] Summary Report:
 
-![Summary Report](./ZentraImages/SummaryReport.png)
+![Summary Report](./ZENTRAImages/SummaryReport.png)
 
 ### 5.3. [3] Graphical Report:
 
-![Graphical Report](./ZentraImages/GraphicalReport.png)
+![Graphical Report](./ZENTRAImages/GraphicalReport.png)
 
 ### 6. [3] View Saved Logs
 
-![View Saved Logs](./ZentraImages/ViewSavedLogs.png)
+![View Saved Logs](./ZENTRAImages/ViewSavedLogs.png)
 
 ### 7. [4] Update Weekly Sleep
 
-![Update Weekly Sleep](./ZentraImages/UpdateWeekly Sleep.png)
+![Update Weekly Sleep](./ZENTRAImages/UpdateWeeklySleep.png)
 
 ### 8. [5] Delete Saved Logs
 
-![Delete Saved Logs](./ZentraImages/DeleteSavedLogs.png)
+![Delete Saved Logs](./ZENTRAImages/DeleteSavedLogs.png)
 
 ### 9. [6] Exit
 
-![Exit](./ZentraImages/Exit.png)
+![Exit](./ZENTRAImages/Exit.png)
 
 ## ACKNOWLEDGEMENT
 

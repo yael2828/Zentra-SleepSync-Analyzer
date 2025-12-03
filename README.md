@@ -146,19 +146,19 @@
 
 ![Graphical Report](./ZENTRAImages/GraphicalReport.png)
 
-### 6. [3] View Saved Logs
+### 6. [4] View Saved Logs
 
 ![View Saved Logs](./ZENTRAImages/ViewSavedLogs.png)
 
-### 7. [4] Update Weekly Sleep
+### 7. [5] Update Weekly Sleep
 
 ![Update Weekly Sleep](./ZENTRAImages/UpdateWeeklySleep.png)
 
-### 8. [5] Delete Saved Logs
+### 8. [6] Delete Saved Logs
 
 ![Delete Saved Logs](./ZENTRAImages/DeleteSavedLogs.png)
 
-### 9. [6] Exit
+### 9. [7] Exit
 
 ![Exit](./ZENTRAImages/Exit.png)
 

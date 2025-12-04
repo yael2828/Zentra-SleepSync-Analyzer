@@ -10,7 +10,7 @@
 
   This section explains how the four fundamental Object-Oriented Programming (OOP) concepts, such as abstraction, inheritance, polymorphism, and encapsulation, were applied in the development of the SleepSync Analyzer. Each pillar is described in relation to its actual function and behavior in the program.
 
-### 1. **Abstraction**
+### 1. **ABSTRACTION**
 
   Abstraction focuses on hiding complex implementation details while exposing only essential features to users. Our system implements abstraction through abstract classes that define contracts without providing complete implementations. The SleepAnalyzer abstract class specifies what sleep analyzers must do (analyze patterns and provide recommendations) without dictating how each analysis should be performed. This allows different analyzers to implement their own logic while maintaining a consistent interface. Similarly, the ReportGenerator abstract class defines what reports must generate without specifying the exact format or content. Beyond class design, abstraction is also present in higher-level components: the SleepLogFileManager class hides the complexities of file input/output operations, and the WeeklySleepLog class abstracts away intricate calculations for averages and pattern detection. This layered abstraction makes the system easier to understand, use, and maintain.
 

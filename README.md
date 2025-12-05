@@ -68,7 +68,7 @@
   
   Also extending ReportGenerator, SummaryReport generates brief, focused reports highlighting only key metrics and overall sleep status. This report type provides quick insights without extensive detail.
 
-##### **GraphicalReport (Visual Representation) - Inheritance**
+#### **GraphicalReport (Visual Representation) - Inheritance**
  
   Extending ReportGenerator, GraphicalReport creates visual reports using ASCII art representations including bar charts for sleep hours and star ratings for sleep quality. This report type offers intuitive visual analysis of sleep patterns.
 
